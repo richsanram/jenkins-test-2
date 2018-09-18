@@ -1,7 +1,12 @@
 ---
 - job:
     name: job-generator
+    parameters:
+      - string:
+          name: Jobsname
+          default: hello-world
+          description: Job's name
     builders:
       - dsl:
           script-text:
-            !include-raw hello-world.dsl
+            !include-raw: hello-world.dsl

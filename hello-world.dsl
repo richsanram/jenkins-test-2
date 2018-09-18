@@ -1,5 +1,5 @@
-job ("hello-world") {
+job ("$Jobsname") {
   steps {
-    shell('echo "Hello World! 2!"')
+    shell('echo "Hello World! 4!"')
   }
 }
